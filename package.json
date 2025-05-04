@@ -1,0 +1,25 @@
+{
+    "name": "easycolor",
+    "version": "1.0.0",
+    "description": "Simple CLI output colorizer for Node.js applications",
+    "main": "index.js",
+    "bin": {
+      "easycolor": "./bin/cli.js"
+    },
+    "scripts": {
+      
+    },
+    "keywords": [
+      "cli",
+      "color",
+      "terminal",
+      "console",
+      "ansi",
+      "colorize"
+    ],
+    "author": "onure9e",
+    "license": "MIT",
+    "engines": {
+      "node": ">=10.0.0"
+    }
+  }
