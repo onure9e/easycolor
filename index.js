@@ -82,7 +82,7 @@ easycolor.colorize = (text, colorCode) => {
 Object.keys(ANSI_CODES).forEach(color => {
   // 'reset' hariç tüm kodlar için fonksiyon oluştur
   if (color !== 'reset') {
-    easycolor[color] = (text) => easycolor.colorize(text, ANSI_CODES[color]);
+    easycolor[color] = (text) => easycolor.colorize(text, color);
   }
 });
 
