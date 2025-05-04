@@ -1,4 +1,4 @@
-# easycolor
+# EasyColor
 
 A simple Node.js package and command-line tool for coloring terminal outputs.
 
@@ -14,13 +14,13 @@ A simple Node.js package and command-line tool for coloring terminal outputs.
 ## Installation
 
 ```bash
-npm install easycolor --global
+npm install @onurege3467/easycolor --global
 ```
 
 To use only in your project:
 
 ```bash
-npm install easycolor --save
+npm install @onurege3467/easycolor --save
 ```
 
 ## Command-Line Usage
@@ -51,31 +51,31 @@ easycolor help
 ## Programmatic Usage
 
 ```javascript
-const easycolor = require('easycolor');
+const @onurege3467/easycolor = require('@onurege3467/easycolor');
 
 // Simple coloring
-console.log(easycolor.colorize('Red text','red'));
-console.log(easycolor.colorize('Text with yellow background','bgYellow'));
-console.log(easycolor.colorize('Bold text','bold'));
+console.log(@onurege3467/easycolor.colorize('Red text','red'));
+console.log(@onurege3467/easycolor.colorize('Text with yellow background','bgYellow'));
+console.log(@onurege3467/easycolor.colorize('Bold text','bold'));
 
 // Apply multiple styles with chain methods
 console.log(
-  easycolor.chain('Blue and bold text')
+  @onurege3467/easycolor.chain('Blue and bold text')
     .blue()
     .bold()
     .toString()
 );
 
 // Rainbow effect
-console.log(easycolor.rainbow('Rainbow text'));
+console.log(@onurege3467/easycolor.rainbow('Rainbow text'));
 
 // Random color
-console.log(easycolor.random('Randomly colored text'));
+console.log(@onurege3467/easycolor.random('Randomly colored text'));
 
 // Colored console logging
-console.log(easycolor.colorize('✓ Operation successful','green'));
-console.log(easycolor.colorize('✗ An error occurred','red'));
-console.log(easycolor.colorize('⚠ Warning message','yellow'));
+console.log(@onurege3467/easycolor.colorize('✓ Operation successful','green'));
+console.log(@onurege3467/easycolor.colorize('✗ An error occurred','red'));
+console.log(@onurege3467/easycolor.colorize('⚠ Warning message','yellow'));
 ```
 
 ## Supported Colors and Styles
@@ -128,14 +128,10 @@ console.log(easycolor.colorize('⚠ Warning message','yellow'));
 
 ## API Reference
 
-### Simple Usage
-```javascript
-easycolor.color(text)
-```
 
 ### Chain Method
 ```javascript
-easycolor.chain(text)
+@onurege3467/easycolor.chain(text)
   .color1()
   .color2()
   .style()
@@ -144,19 +140,19 @@ easycolor.chain(text)
 
 ### Special Effects
 ```javascript
-easycolor.rainbow(text)
-easycolor.random(text)
+@onurege3467/easycolor.rainbow(text)
+@onurege3467/easycolor.random(text)
 ```
 
 ### Terminal Support
 ```javascript
 // Check terminal color support
-const isSupported = easycolor.isSupported();
+const isSupported = @onurege3467/easycolor.isSupported();
 
 // Disable colors
-easycolor.disable();
+@onurege3467/easycolor.disable();
 
 // Enable colors
-easycolor.enable();
+@onurege3467/easycolor.enable();
 ```
 

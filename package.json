@@ -1,5 +1,5 @@
 {
-    "name": "easycolor",
+    "name": "@onurege3467/easycolor",
     "version": "1.0.0",
     "description": "Simple CLI output colorizer for Node.js applications",
     "main": "index.js",
